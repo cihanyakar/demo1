@@ -28,7 +28,7 @@ namespace CodeAnalyze.Business
 
     public class RemoteFileReader
     {
-        public static async Task<List<RemoteFile>> ReadAll(dynamic payload, CancellationToken cancellationToken)
+        public static async Task<List<RemoteFile>> readAll(dynamic payload, CancellationToken cancellationToken)
         {
             var result = new List<RemoteFile>();
             var filesLink = payload.pull_request.url + "/files";
